@@ -1,38 +1,424 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #2e64a1;
+  padding-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header h1 {
   color: white;
+  font-weight: 100;
+  font-style: italic;
+
+  /* display: inline-flex; */
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
 }
 
-.App-link {
-  color: #61dafb;
+
+nav {
+  background-color: #6da9ed;
+  margin-bottom: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+
+  padding: 3px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a.activo {
+  background-color: #4c76a5;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+  margin: 20px;
+  font-size: 14px;
+  text-decoration:solid;
+}
+
+
+
+
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+
+
+}
+
+h2 {
+  color: #2e64a1;
+  font-weight: 400;
+
+}
+
+/* inicio home */
+
+.homeimg img {
+  max-width: 100%;
+}
+
+
+.columnas {
+  display: flex;
+}
+
+
+.bienvenidos {
+  width: 75%;
+  padding-right: 20px;
+
+}
+
+.testimonios {
+  width: 25%;
+
+}
+
+.bienvenidos p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.testimonio {
+  border-color: #ccc;
+  padding: 12px;
+  background-color: #a3bbe9;
+
+}
+
+.testimonio .cita {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  display: block;
+
+}
+
+.testimonio .autor {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin: 16px 0;
+}
+
+
+
+
+/* fin home */
+
+/* fin nosotros */
+.historia p {
+  font-size: 12px;
+}
+
+.personas {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.persona {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  width: 18%;
+  padding: 12px;
+  box-sizing: border-box;
+
+
+}
+
+.persona img {
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  width: 40%;
+  /* margin-top: 12px; */
+  margin: 10px 0 12px
+}
+
+.persona h5,
+.persona h6 {
+  color: #2e64a1;
+  margin: 0;
+  font-weight: normal;
+  text-align: start
+}
+
+
+.persona h6 {
+  font-style: italic;
+  font-size: 13px;
+
+}
+
+.persona p {
+  font-size: 12px;
+  text-align: left;
+}
+
+/* fin nosotros */
+
+/* inicio servicios */
+
+
+.servicio {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 16px 0;
+  display: flex;
+  /* pone la imagen al lado del texto */
+  align-items: center;
+  gap: 30px;
+  /* pone separacion de imagen y texto*/
+}
+
+
+.servicio img {
+  border-radius: 13px;
+  max-width: 225px;
+  display: block;
+  /* align-items: center; */
+}
+
+
+
+.servicio .info h4 {
+  color: #2e64a1;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #2e64a1;
+  padding: 10px;
+
+}
+
+
+.servicio .info p {
+  font-size: 13px;
+  line-height: 25px;
+  /*separacion de las lineas*/
+}
+
+/* fin servicios */
+
+inicio galeria
+
+
+/* fin galeria */
+
+.galeria {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 16px 0;
+  display: flex;    
+  align-items: center;
+  gap: 30px;
+
+
+     
+}
+
+
+.galeria img {
+  border-radius: 10px;
+  max-width: 225;
+  /* display: block; */
+  border-style:groove;
+
+  
+}
+
+
+/* inicio contacto */
+
+.contacto {
+  display: flex;
+
+}
+
+.contacto div {
+  width: 100%;
+  gap: 25px;
+  padding: 20px;
+
+}
+
+.datos p {
+  font-size: 14px;
+
+}
+
+.datos ul li {
+  font-size: 13px;
+
+}
+
+.formulario p {
+
+  /* display: flex; hace q el label este sobre el imput */
+}
+
+.formulario p input {
+  /* background-color: yellow; */
+}
+
+.formulario p label {
+  min-width: 100px;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+.formulario p input,
+.formulario p textarea {
+
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid #35176e;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+
+
+.formulario p textarea {
+  resize: none;
+  height: 150px;
+}
+
+.formulario p:nth-child(4) {
+
+  align-items: start;
+}
+
+.formulario input[type="submit"] {
+  background-color: #6da9ed;
+
+  width: 80px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  position: relative;
+  left: 400px;
+}
+
+.formulario input [type="submit"]:hover {
+  background-color: #0a6b4e;
+}
+
+
+
+/* fin contacto */
+
+
+
+/* inicio @media 550 */
+
+@media screen and (max-width:550px) {
+
+  /* home */
+  .columnas {
+      flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bienvenidos,
+  .testimonios {
+      width: 100%
   }
+
+  .holder {
+      padding: 0 16px;
+  }
+
+  .personas {
+
+      flex-wrap: wrap;
+      gap: 16px;
+
+  }
+
+  .persona {
+      width: 47%;
+  }
+
+
+  .contacto {
+      flex-direction: column;
+      padding: 0px;
+  }
+
+  .datos {
+      
+      display: none;
+  }
+
+  header .holder {
+      /* background-color: #f60404; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 16px 0;
+  }
+
+  header h1 {
+      position: static;
+      margin-left: 10px;
+      /* display: none; */
+      font-size: 27px;
+  }
+
+  header img {
+      max-width: 80px;
+  }
+
+  
+
+
+}
+
+
+/* fin @media 550 */
+
+@media screen and (max-width:320px) {
+
+  nav ul.holder {
+      flex-direction: column;
+      padding: 0px;
+
+  }
+
+
 }
